@@ -3,3 +3,132 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-color: rgb(88, 75, 75);
+    color: #222;
+}
+
+.container{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+}
+.rotate-container {
+    
+    transform: rotate(-20deg);
+}
+
+.container.rotate-container + nav li{
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
+.nav-container{
+    position: fixed;
+    top: -100px;
+    left: -100px;
+    
+}
+
+.circle{
+    background-color: rgb(93, 93, 233);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+}
+
+
+.container.rotate-container .circle{
+    transform: rotate(-70deg);
+}
+
+.circle button{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+}
+
+.circle button:focus{
+    outline: none;
+}
+
+.circle button#open{
+    left: 60%;
+    transform: rotate(0);
+}
+
+.circle button#close{
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.main-content{
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content img{
+    
+    width: 100%;
+    height: auto;
+}
+.main-content h1{
+    font-weight: 700;
+    align-self: flex-start;
+    
+}
+.main-content .author{
+    align-self: flex-start;
+}
+.main-content .author, .imgname{
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+
+nav{
+    position:fixed;
+    bottom: 20px;
+    left: 20px;
+    color: #f7f7f7;
+    z-index: 1;
+
+}
+
+nav ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    transform: translateX(-100%);
+}
+
+nav ul li+li{
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+
+nav ul li+li+li{
+    margin-left: 30px;
+    transform: translateX(-200px);
+}

@@ -4,14 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rotate Navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Poppins:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="nav-container"></div>
+      <div class="nav-container">
+        <div class="circle">
+          <button id="open">
+          <img class="open-menu" src="./assets/hamburger-menu-png.png" alt="menu-image">
+          </button>
+          <button id="close">
+          <img class="close-image" src="./assets/icons8-close-png.png" alt="close image">
+          </button>
+        </div>
+      </div>
       <div class="main-content">
         <h1>Amazing Story</h1>
-        <p>Rakesh Cherry</p>
+        <p class="author">Rakesh Cherry</p>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quis
           blanditiis mollitia consectetur nemo, veritatis et nostrum facere ea
@@ -21,7 +33,7 @@
           voluptates harum?
         </p>
         <img src="./assets/open-book.jpg" alt="Open Book" />
-        <p>world of Amazing stories</p>
+        <p class="imgname">world of Amazing stories</p>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
           cupiditate. Repellendus eum, cupiditate commodi fugiat, dolore facere
@@ -57,37 +69,18 @@
           voluptates ullam quisquam labore, aliquid culpa quidem, unde
           perferendis commodi nostrum cupiditate facilis aperiam alias odio
           libero maiores laborum ex! Libero, architecto nisi! Cupiditate,
-          maxime? Illum, voluptatem facere fuga illo ea earum voluptate sapiente
-          quidem optio repudiandae distinctio quos odit, assumenda quaerat
-          perspiciatis repellat. Asperiores nam velit, provident omnis, adipisci
-          tempora porro animi dolore repellendus nostrum iusto ex. Doloremque
-          saepe minima illo laboriosam dolore consequatur, amet esse architecto
-          id exercitationem perferendis vero, pariatur placeat labore dolorem
-          delectus magnam minus repellat magni? Veritatis voluptas eum libero
-          facilis temporibus rerum tenetur fugit nulla qui harum praesentium,
-          dolore magnam natus rem est! Atque provident, molestiae laboriosam
-          ratione ex facere delectus quis explicabo, inventore et, sequi sit
-          similique deserunt praesentium maxime nulla natus nam non quos tenetur
-          quo eaque iusto. Sed nihil, error fugiat repudiandae quo alias quam
-          accusamus corrupti impedit tempora laborum ipsa asperiores odit,
-          dicta, nobis voluptatum ad vel accusantium iste ipsum unde consequatur
-          in debitis esse. Maiores ratione cupiditate tenetur sequi quas facilis
-          rerum quis consequuntur, incidunt blanditiis deleniti commodi esse
-          nisi suscipit eligendi expedita reiciendis accusamus debitis illum
-          harum? Quasi, quae rem vel error assumenda iusto eveniet alias
-          expedita distinctio et nesciunt asperiores explicabo deserunt
-          architecto voluptate quisquam reiciendis ea soluta quo voluptatibus
-          vero! Natus minima cum, est dolore placeat sapiente, praesentium
-          consequuntur ipsam nam ratione quis vitae ea itaque soluta. Blanditiis
+          maxime? Illum, voluptatem face
           consequuntur expedita voluptate!
         </p>
       </div>
+    </div>
+    <nav>
       <ul>
         <li>HOME</li>
         <li>ABOUT</li>
         <li>CONTACT</li>
       </ul>
-    </div>
+    </nav>
     <script src="script.js"></script>
   </body>
 </html>
